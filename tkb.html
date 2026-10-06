@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thời Khóa Biểu 11A2 - THPT Hòa Đa</title>
+    <link rel="stylesheet" href="tkb.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <p class="school-name">TRƯỜNG THPT HÒA ĐA</p>
+            <h1>THỜI KHÓA BIỂU LỚP 11A2</h1>
+            <p class="apply-date">Thực hiện từ ngày: 05/10/2026</p>
+        </header>
+
+        <!-- Bộ lọc chọn thứ -->
+        <div class="filter-box">
+            <label for="daySelect">Chọn ngày xem: </label>
+            <select id="daySelect">
+                <option value="all">Tất cả các ngày</option>
+                <option value="Thứ 2">Thứ 2</option>
+                <option value="Thứ 3">Thứ 3</option>
+                <option value="Thứ 4">Thứ 4</option>
+                <option value="Thứ 5">Thứ 5</option>
+                <option value="Thứ 6">Thứ 6</option>
+            </select>
+        </div>
+
+        <!-- Bảng thời khóa biểu -->
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Thứ</th>
+                        <th>Tiết</th>
+                        <th>Buổi Sáng</th>
+                        <th>Buổi Chiều</th>
+                    </tr>
+                </thead>
+                <tbody id="scheduleBody">
+                    <!-- Dữ liệu JS sẽ đổ vào đây -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="tkb.js"></script>
+</body>
+</html>
